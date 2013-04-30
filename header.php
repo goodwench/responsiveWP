@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title><?php echo wp_title( '&raquo;', TRUE, 'right' ); ?><?php echo get_bloginfo ( 'name' );  ?><br /></title>
+        <title><?php is_front_page() ? bloginfo('description') : wp_title(''); ?> | <?php bloginfo('name'); ?></title>
         <meta name="description" content="A nifty Wordpress theme built from HTML5Boilerplate. Mobile-first Responsive.">
         <meta name="viewport" content="width=device-width">
         
@@ -16,6 +16,10 @@
         <link rel="apple-touch-icon" sizes="72x72" href="img/_icons/apple-touch-icon-72x72-precomposed.png" />
         <link rel="apple-touch-icon" sizes="114x114" href="img/_icons/apple-touch-icon-114x114-precomposed.png" />
         <link rel="apple-touch-icon" sizes="144x144" href="img/_icons/apple-touch-icon-144x144-precomposed.png" />
+
+        <?php if (is_search()) { ?>
+        <meta name="robots" content="noindex, nofollow" /> 
+        <?php } ?>
 		
 		<!-- Only javascript in the header is modernizr -->
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
@@ -32,11 +36,18 @@
             <header class="wrapper clearfix">
                 <h1 class="title">h1.title</h1>
                 <nav>
-                    <ul>
-                        <li><a href="#">nav ul li a</a></li>
-                        <li><a href="#">nav ul li a</a></li>
-                        <li><a href="#">nav ul li a</a></li>
-                    </ul>
+                    <?php wp_nav_menu( array
+                            (
+                              'theme_location'  => 'nav',
+                              'container'       => 'ul', 
+                              'container_class' => 'menu-{menu slug}-container', 
+                              'menu_id'    => 'top-nav',
+                              'menu_class'      => 'main-nav', 
+                              'echo'            => true,
+                              'fallback_cb'     => 'wp_page_menu',  
+                            )
+                        );
+                    ?>         
                 </nav>
             </header>
         </div>
