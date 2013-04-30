@@ -1,0 +1,64 @@
+body { font: $fontBody #{$fontSize}/1.4 normal; }
+
+
+//--------------------------------------------------
+//	Headings
+//--------------------------------------------------
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $fontHeadings;
+}
+
+
+
+//--------------------------------------------------
+//	Text Elements
+//--------------------------------------------------
+
+a, a:visited { color: $color1; text-decoration: none; }
+a:focus { outline: thin dotted; }
+a:hover, a:active { outline: 0; }
+a:hover { text-decoration: underline; }
+p { margin: 0 0 1.5em; }
+blockquote { color: #666; font-style: italic; margin: 1.5em; }
+b, strong, dfn { font-weight: bold; }
+em, dfn { font-style: italic; }
+abbr, acronym { cursor: help; }
+abbr[title] { border-bottom: none; text-transform: uppercase; }
+address { font-style: normal; margin: 0 0 1.5em; }
+del { color: #666; }
+ins { background: #ff9; color: #000; text-decoration: none; }
+mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
+pre { margin: 1.5em 0; white-space: pre; }
+pre, code, kbd, samp, tt { font: 1em 'andale mono', 'lucida console', monospace; line-height: 1.5; }
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
+q { quotes: none; }
+q:before, q:after { content: ""; content: none; }
+small { font-size: 85%; }
+sub, sup { position: relative; font-size: 75%; line-height: 0; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0; }
+
+
+
+//--------------------------------------------------
+//	List Elements
+//--------------------------------------------------
+
+li ul, li ol { margin: 0; }
+ul, ol { margin: 0 1.5em 1.5em 0; padding-left: 1.5em; }
+ul { list-style-type: disc; }
+ol { list-style-type: decimal; }
+dl { margin: 0 0 1.5em 0; }
+dl dt { font-weight: bold; }
+dd { margin-left: 1.5em; }
+
+
+
+//--------------------------------------------------
+//	Misc.
+//--------------------------------------------------
+
+::-moz-selection { background: $color1; color: #fff; text-shadow: none; }
+::selection { background: $color1; color: #fff; text-shadow: none; }
