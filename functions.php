@@ -1,6 +1,6 @@
 <?php
 
-	// Translations can be filed in the /languages/ directory
+	// // Translations can be filed in the /languages/ directory
 	load_theme_textdomain( 'responsiveWP', TEMPLATEPATH . '/languages' );
 	
 	$locale = get_locale();
@@ -19,25 +19,41 @@
 	/* Admin options go here */
 
 	//Theme Options
-	require_once 'admin-options.php';	
+	require_once 'admin-styles/admin-options.php';	
 
-	// Add a custom logo to admin
+	//Custom logos for the admin bar
 	add_action('admin_head', 'my_custom_logo');
-
 	function my_custom_logo() {
 	echo '
 	<style type="text/css">
-	#header-logo { background-image: url('.get_bloginfo('template_directory').'/img/_icons/apple-touch-icon.png) !important; }
+	.ab-icon { background-image: url('.get_bloginfo('template_directory').'/img/custom-logo.png) !important; }
 	</style>
 	';
 	}
 
-	// Add a custom footer in the admin
+	// Hide Dashboard Widgets you don't want
+
+	add_action('wp_dashboard_setup', 'wpc_dashboard_widgets');
+	function wpc_dashboard_widgets() {
+		global $wp_meta_boxes;
+		// Today widget
+		unset($wp_meta_boxes['dashboard']['normal']['core']['dashboard_right_now']);
+		// Last comments
+		unset($wp_meta_boxes['dashboard']['normal']['core']['dashboard_recent_comments']);
+		// Incoming links
+		unset($wp_meta_boxes['dashboard']['normal']['core']['dashboard_incoming_links']);
+		// Plugins
+		unset($wp_meta_boxes['dashboard']['normal']['core']['dashboard_plugins']);
+	}
+
+	// // Add a custom footer in the admin
 	function remove_footer_admin () {
 	echo '<p>Fueled by <a href="http://www.wordpress.org" target="_blank">WordPress</a> | Designed by <a href="#" target="_blank">Someone</a></p>';
 	}
 
-	// Add custom dashboard widgets
+	add_filter('admin_footer_text', 'remove_footer_admin');
+
+	// // Add custom dashboard widgets
 	add_action('wp_dashboard_setup', 'my_custom_dashboard_widgets');
 
 	function my_custom_dashboard_widgets() {
@@ -47,16 +63,16 @@
 	}
 
 	function custom_dashboard_help() {
-	echo '<p>Welcome to Custom Blog Theme! Need help? Contact the developer <a href="mailto:yourusername@gmail.com">here</a></p>';
+	echo '<p>Welcome to your site! Need help? Contact the developer <a href="mailto:yourusername@gmail.com">here</a></p>';
 	}
 
 
-	//Custom Gravatar
+	// //Custom Gravatar
 
 	add_filter( 'avatar_defaults', 'newgravatar' );
 
 	function newgravatar ($avatar_defaults) {
-	$myavatar = get_bloginfo('template_directory') . '/images/gravatar.gif';
+	$myavatar = get_bloginfo('template_directory').'/img/gravatar.png';
 	$avatar_defaults[$myavatar] = "Custom Gravatar";
 	return $avatar_defaults;
 	}
@@ -64,18 +80,18 @@
 
 	/*Theme functions go here*/
 
-	//Add in our non-jquery scripts
+	// //Add in our non-jquery scripts
 	function my_scripts_method() {
-	    wp_enqueue_script('plugit', get_bloginfo('template_url').'/js/plugins.js', 1.0, true);
-	    wp_enqueue_script('plugit', get_bloginfo('template_url').'/js/main.js', 1.0, true);
+	    wp_enqueue_script('plugit', get_bloginfo('template_url').'/js/plugins.js', 1.0, ' ', true);
+	    wp_enqueue_script('main', get_bloginfo('template_url').'/js/main.js', 1.0, ' ', true);
 	}
 
 	add_action( 'wp_enqueue_scripts', 'my_scripts_method' ); // wp_enqueue_scripts action hook to link only on the front-end
 
-	// Add RSS links to <head> section
+	// // Add RSS links to <head> section
 	automatic_feed_links();
 
-	// Add thumbnails to RSS
+	// // Add thumbnails to RSS
 	function rss_post_thumbnail($content) {
 	global $post;
 	if(has_post_thumbnail($post->ID)) {
@@ -97,7 +113,7 @@
 	$now = gmdate('Y-m-d H:i:s');
 
 	// value for wait; + device
-	$wait = '20'; // integer
+	$wait = '30'; // integer
 
 	// http://dev.mysql.com/doc/refman/5.0/en/date-and-time-functions.html#function_timestampdiff
 	$device = 'MINUTE'; //MINUTE, HOUR, DAY, WEEK, MONTH, YEAR
@@ -117,8 +133,8 @@
 		add_image_size( 'small-post-thumbnail', 100, 100, true ); // Small Thumbnail		
 	}
 
-	// enable threaded comments
-	// Remember to enable this in Settings
+	// // enable threaded comments
+	// // Remember to enable this in Settings
 	function enable_threaded_comments(){
 	if (!is_admin()) {
 	if (is_singular() AND comments_open() AND (get_option('thread_comments') == 1))

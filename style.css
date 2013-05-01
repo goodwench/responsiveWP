@@ -1,0 +1,10 @@
+/*   
+Theme Name: ResponsiveWP
+Description: A responsive Wordpress Boilerplate template with professional customization features
+Author: Lisa Kula
+Author URI: http://www.lisakula.com
+Version: 1
+*/
+
+/*Import the Sass Generated Files*/
+@import url(stylesheets/main.css);

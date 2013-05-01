@@ -1,6 +1,6 @@
 <div class="footer-container">
             <footer class="wrapper">
-               
+               <p>&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>  |  All Rights Reserved.</p>
             </footer>
         </div>        
         <!-- Javascript below here -->

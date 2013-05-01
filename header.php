@@ -10,19 +10,19 @@
         <meta name="description" content="A nifty Wordpress theme built from HTML5Boilerplate. Mobile-first Responsive.">
         <meta name="viewport" content="width=device-width">
         
-        <link rel="stylesheet" href="css/main.css">
-        <link href="img/_icons/favicon.ico" rel="shortcut icon" />
-        <link rel="apple-touch-icon" href="img/_icons/apple-touch-icon.png" />
-        <link rel="apple-touch-icon" sizes="72x72" href="img/_icons/apple-touch-icon-72x72-precomposed.png" />
-        <link rel="apple-touch-icon" sizes="114x114" href="img/_icons/apple-touch-icon-114x114-precomposed.png" />
-        <link rel="apple-touch-icon" sizes="144x144" href="img/_icons/apple-touch-icon-144x144-precomposed.png" />
+        <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
+        <link href="<?php bloginfo('template_directory'); ?>/img/_icons/favicon.ico" rel="shortcut icon" />
+        <link rel="apple-touch-icon" href="<?php bloginfo('template_directory'); ?>/img/_icons/apple-touch-icon.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="<?php bloginfo('template_directory'); ?>/img/_icons/apple-touch-icon-72x72-precomposed.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="<?php bloginfo('template_directory'); ?>/img/_icons/apple-touch-icon-114x114-precomposed.png" />
+        <link rel="apple-touch-icon" sizes="144x144" href="<?php bloginfo('template_directory'); ?>/img/_icons/apple-touch-icon-144x144-precomposed.png" />
 
         <?php if (is_search()) { ?>
         <meta name="robots" content="noindex, nofollow" /> 
         <?php } ?>
 		
 		<!-- Only javascript in the header is modernizr -->
-        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        <script src="<?php bloginfo('template_directory'); ?>/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 
         <!-- You want plugins? Leave this baby alone. -->
         <?php wp_head(); ?>
@@ -34,7 +34,7 @@
 
         <div class="header-container">
             <header class="wrapper clearfix">
-                <h1 class="title">h1.title</h1>
+                <h1 class="title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo('name'); ?></a></h1>
                 <nav>
                     <?php wp_nav_menu( array
                             (
