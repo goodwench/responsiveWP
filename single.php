@@ -13,7 +13,9 @@
 				 		?>
 				 	</div>					
 				 	<?php the_content(); ?>
+				 	<?php edit_post_link('Edit this entry','','.'); ?>
 				</section>
+				<?php comments_template( '', true ); ?>
 			<?php endwhile; else: ?>
 			<p class="missing-posts"><?php _e('Sorry, no posts matched your criteria.'); ?></p>
 			<?php endif; ?>

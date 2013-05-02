@@ -45,6 +45,11 @@ textarea {
   resize: vertical;
 }
 
+h2 {
+  font-size: 24px;
+  color: $black;  
+}
+
 .chromeframe {
   margin: 0.2em 0;
   background: #ccc;
@@ -70,11 +75,11 @@ body {
    =================== */
 
 .header-container {
-  border-bottom: 20px solid #e44d26;
+  border-bottom: 20px solid $color1;
 }
 
 .footer-container, .main aside {
-  border-top: 20px solid #e44d26;
+  border-top: 20px solid $color1;
 }
 
 .header-container, .footer-container, .main aside {
@@ -90,16 +95,151 @@ body {
   font-weight: bold;
 }
 
+.post-edit-link {
+  clear:both;
+  font-size: 90%;
+  font-style: italic;
+}
+
 .thumbnail {
   @include size(150px, 150px);
   @include float(left);
+  @include clearfix;
 }
+/* ==============
+   Sidebar Styles
+   ============== */
+
+  aside.sidebar {
+    color: white;
+
+    h2 {
+      color: #fff;
+      font-size: 20px;
+    }
+
+    a{
+      color: #f2a787;
+      text-decoration: none;
+
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  } 
+
+
 
 /* ==============
       Comments
    ============== */
 
-.commentlist { clear: both;}   
+   .comment-container {
+      clear: both;
+
+      .reply {
+        font-size: 90%;
+        margin-bottom: 8px;
+      }
+
+      h3 {        
+        font-size: 20px;
+        font-weight: bold;
+        color: $color1;
+        text-shadow: 1px 1px #ddd;
+      }
+      
+      .commentlist {
+        
+         li {
+          list-style-type: none !important; 
+          padding: 8px;
+          font-size: 13px;
+
+            .comment-meta {
+              font-size: 11px;
+            }
+
+            .comment-author {
+              border-top: 1px solid #ccc;
+              border-bottom: 1px solid #ccc;
+              padding: 5px 0;
+            } 
+
+            .odd {
+              background: #e2e2e2; /* Old browsers */
+              background: -moz-linear-gradient(top,  #e2e2e2 0%, #f9f9f9 100%); /* FF3.6+ */
+              background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e2e2e2), color-stop(100%,#f9f9f9)); /* Chrome,Safari4+ */
+              background: -webkit-linear-gradient(top,  #e2e2e2 0%,#f9f9f9 100%); /* Chrome10+,Safari5.1+ */
+              background: -o-linear-gradient(top,  #e2e2e2 0%,#f9f9f9 100%); /* Opera 11.10+ */
+              background: -ms-linear-gradient(top,  #e2e2e2 0%,#f9f9f9 100%); /* IE10+ */
+              background: linear-gradient(to bottom,  #e2e2e2 0%,#f9f9f9 100%); /* W3C */
+              filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#f9f9f9',GradientType=0 ); /* IE6-9 */
+           
+            }       
+          } 
+
+      }
+    }
+
+
+   /* Comment form */
+   #respond {
+    margin-top: 48px;
+
+    #reply-title {
+      font-size: 16px;    
+      line-height: 1.5;
+
+      #cancel-comment-reply-link {
+          margin-left: 10px;    
+          font-weight: normal;
+          font-size: 12px;
+          
+      }
+    }
+
+    form {
+      margin: 24px 0;
+
+      p {
+        margin: 11px 0; 
+
+        &.logged-in-as {
+          margin-bottom: 24px;  
+        }
+
+        &.form-allowed-tags {
+          margin: 0;
+          font-size: 12px;
+          
+          line-height: 2;
+          color: #5e5e5e;
+        }   
+      }
+
+      label {
+        display: block;
+        line-height: 1.714285714;
+      }
+
+      input[type="text"], textarea
+      {
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        font-size: 12px;
+        
+        line-height: 1.714285714;
+        padding: 10px;
+        
+        width: 100%;
+      }   
+    }   
+   }
+
+   .required {
+    color: red;
+   }
 
 
 /* ==============
@@ -119,7 +259,7 @@ nav {
     text-decoration: none;
     font-weight: bold;
     color: white;
-    background: #e44d26;
+    background: $color1;
     &:hover, &:visited {
       color: white;
     }
