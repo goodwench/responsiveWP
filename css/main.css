@@ -1,3 +1,4 @@
+/* line 16, ../sass/_normalize.scss */
 article,
 aside,
 details,
@@ -12,6 +13,7 @@ summary {
   display: block;
 }
 
+/* line 24, ../sass/_normalize.scss */
 audio,
 canvas,
 video {
@@ -20,21 +22,25 @@ video {
   *zoom: 1;
 }
 
+/* line 33, ../sass/_normalize.scss */
 audio:not([controls]) {
   display: none;
   height: 0;
 }
 
+/* line 41, ../sass/_normalize.scss */
 [hidden] {
   display: none;
 }
 
+/* line 55, ../sass/_normalize.scss */
 html {
   font-size: 100%;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }
 
+/* line 68, ../sass/_normalize.scss */
 html,
 button,
 input,
@@ -43,76 +49,92 @@ textarea {
   font-family: sans-serif;
 }
 
+/* line 73, ../sass/_normalize.scss */
 body {
   margin: 0;
 }
 
+/* line 84, ../sass/_normalize.scss */
 a:focus {
   outline: thin dotted;
 }
 
+/* line 92, ../sass/_normalize.scss */
 a:active,
 a:hover {
   outline: 0;
 }
 
+/* line 105, ../sass/_normalize.scss */
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
 }
 
+/* line 110, ../sass/_normalize.scss */
 h2 {
   font-size: 1.5em;
   margin: 0.83em 0;
 }
 
+/* line 115, ../sass/_normalize.scss */
 h3 {
   font-size: 1.17em;
   margin: 1em 0;
 }
 
+/* line 120, ../sass/_normalize.scss */
 h4 {
   font-size: 1em;
   margin: 1.33em 0;
 }
 
+/* line 125, ../sass/_normalize.scss */
 h5 {
   font-size: 0.83em;
   margin: 1.67em 0;
 }
 
+/* line 130, ../sass/_normalize.scss */
 h6 {
   font-size: 0.75em;
   margin: 2.33em 0;
 }
 
+/* line 137, ../sass/_normalize.scss */
 abbr[title] {
   border-bottom: 1px dotted;
 }
 
+/* line 144, ../sass/_normalize.scss */
 b,
 strong {
   font-weight: bold;
 }
 
+/* line 148, ../sass/_normalize.scss */
 blockquote {
   margin: 1em 40px;
 }
 
+/* line 154, ../sass/_normalize.scss */
 dfn {
   font-style: italic;
 }
 
+/* line 159, ../sass/_normalize.scss */
 mark {
   background: #ff0;
   color: #000;
 }
 
+/* line 167, ../sass/_normalize.scss */
 p,
 pre {
   margin: 1em 0;
 }
 
+/* line 177, ../sass/_normalize.scss */
 code,
 kbd,
 pre,
@@ -122,26 +144,31 @@ samp {
   font-size: 1em;
 }
 
+/* line 185, ../sass/_normalize.scss */
 pre {
   white-space: pre;
   white-space: pre-wrap;
   word-wrap: break-word;
 }
 
+/* line 193, ../sass/_normalize.scss */
 q {
   quotes: none;
 }
 
+/* line 199, ../sass/_normalize.scss */
 q:before,
 q:after {
   content: '';
   content: none;
 }
 
+/* line 204, ../sass/_normalize.scss */
 small {
   font-size: 75%;
 }
 
+/* line 212, ../sass/_normalize.scss */
 sub,
 sup {
   font-size: 75%;
@@ -150,14 +177,17 @@ sup {
   vertical-align: baseline;
 }
 
+/* line 219, ../sass/_normalize.scss */
 sup {
   top: -0.5em;
 }
 
+/* line 223, ../sass/_normalize.scss */
 sub {
   bottom: -0.25em;
 }
 
+/* line 237, ../sass/_normalize.scss */
 dl,
 menu,
 ol,
@@ -165,45 +195,54 @@ ul {
   margin: 1em 0;
 }
 
+/* line 241, ../sass/_normalize.scss */
 dd {
   margin: 0 0 0 40px;
 }
 
+/* line 249, ../sass/_normalize.scss */
 menu,
 ol,
 ul {
   padding: 0 0 0 40px;
 }
 
+/* line 256, ../sass/_normalize.scss */
 nav ul,
 nav ol {
   list-style: none;
   list-style-image: none;
 }
 
+/* line 270, ../sass/_normalize.scss */
 img {
   border: 0;
   -ms-interpolation-mode: bicubic;
 }
 
+/* line 277, ../sass/_normalize.scss */
 svg:not(:root) {
   overflow: hidden;
 }
 
+/* line 288, ../sass/_normalize.scss */
 figure {
   margin: 0;
 }
 
+/* line 299, ../sass/_normalize.scss */
 form {
   margin: 0;
 }
 
+/* line 305, ../sass/_normalize.scss */
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em;
 }
 
+/* line 315, ../sass/_normalize.scss */
 legend {
   border: 0;
   padding: 0;
@@ -211,6 +250,7 @@ legend {
   *margin-left: -7px;
 }
 
+/* line 329, ../sass/_normalize.scss */
 button,
 input,
 select,
@@ -221,11 +261,13 @@ textarea {
   *vertical-align: middle;
 }
 
+/* line 340, ../sass/_normalize.scss */
 button,
 input {
   line-height: normal;
 }
 
+/* line 355, ../sass/_normalize.scss */
 button,
 html input[type="button"],
 input[type="reset"],
@@ -235,11 +277,13 @@ input[type="submit"] {
   *overflow: visible;
 }
 
+/* line 364, ../sass/_normalize.scss */
 button[disabled],
 input[disabled] {
   cursor: default;
 }
 
+/* line 374, ../sass/_normalize.scss */
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
@@ -248,6 +292,7 @@ input[type="radio"] {
   *width: 13px;
 }
 
+/* line 385, ../sass/_normalize.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
   -moz-box-sizing: content-box;
@@ -255,94 +300,114 @@ input[type="search"] {
   box-sizing: content-box;
 }
 
+/* line 395, ../sass/_normalize.scss */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
+/* line 402, ../sass/_normalize.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
 
+/* line 409, ../sass/_normalize.scss */
 textarea {
   overflow: auto;
   vertical-align: top;
 }
 
+/* line 421, ../sass/_normalize.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
+/* line 1, ../sass/_typography.scss */
 body {
   font: sans-serif 13px/1.4 normal;
 }
 
+/* line 8, ../sass/_typography.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: serif;
 }
 
+/* line 18, ../sass/_typography.scss */
 a, a:visited {
   color: #e7592b;
   text-decoration: none;
 }
 
+/* line 19, ../sass/_typography.scss */
 a:focus {
   outline: thin dotted;
 }
 
+/* line 20, ../sass/_typography.scss */
 a:hover, a:active {
   outline: 0;
 }
 
+/* line 21, ../sass/_typography.scss */
 a:hover {
   text-decoration: underline;
 }
 
+/* line 22, ../sass/_typography.scss */
 p {
   margin: 0 0 1.5em;
 }
 
+/* line 23, ../sass/_typography.scss */
 blockquote {
   color: #666;
   font-style: italic;
   margin: 1.5em;
 }
 
+/* line 24, ../sass/_typography.scss */
 b, strong, dfn {
   font-weight: bold;
 }
 
+/* line 25, ../sass/_typography.scss */
 em, dfn {
   font-style: italic;
 }
 
+/* line 26, ../sass/_typography.scss */
 abbr, acronym {
   cursor: help;
 }
 
+/* line 27, ../sass/_typography.scss */
 abbr[title] {
   border-bottom: none;
   text-transform: uppercase;
 }
 
+/* line 28, ../sass/_typography.scss */
 address {
   font-style: normal;
   margin: 0 0 1.5em;
 }
 
+/* line 29, ../sass/_typography.scss */
 del {
   color: #666;
 }
 
+/* line 30, ../sass/_typography.scss */
 ins {
   background: #ff9;
   color: #000;
   text-decoration: none;
 }
 
+/* line 31, ../sass/_typography.scss */
 mark {
   background: #ff0;
   color: #000;
@@ -350,35 +415,42 @@ mark {
   font-weight: bold;
 }
 
+/* line 32, ../sass/_typography.scss */
 pre {
   margin: 1.5em 0;
   white-space: pre;
 }
 
+/* line 33, ../sass/_typography.scss */
 pre, code, kbd, samp, tt {
   font: 1em 'andale mono', 'lucida console', monospace;
   line-height: 1.5;
 }
 
+/* line 34, ../sass/_typography.scss */
 pre {
   white-space: pre;
   white-space: pre-wrap;
   word-wrap: break-word;
 }
 
+/* line 35, ../sass/_typography.scss */
 q {
   quotes: none;
 }
 
+/* line 36, ../sass/_typography.scss */
 q:before, q:after {
   content: "";
   content: none;
 }
 
+/* line 37, ../sass/_typography.scss */
 small {
   font-size: 85%;
 }
 
+/* line 38, ../sass/_typography.scss */
 sub, sup {
   position: relative;
   font-size: 75%;
@@ -386,14 +458,17 @@ sub, sup {
   vertical-align: baseline;
 }
 
+/* line 39, ../sass/_typography.scss */
 sup {
   top: -0.5em;
 }
 
+/* line 40, ../sass/_typography.scss */
 sub {
   bottom: -0.25em;
 }
 
+/* line 41, ../sass/_typography.scss */
 nav ul, nav ol {
   list-style: none;
   list-style-image: none;
@@ -401,41 +476,50 @@ nav ul, nav ol {
   padding: 0;
 }
 
+/* line 49, ../sass/_typography.scss */
 li ul, li ol {
   margin: 0;
 }
 
+/* line 50, ../sass/_typography.scss */
 ul, ol {
   margin: 0 1.5em 1.5em 0;
   padding-left: 1.5em;
 }
 
+/* line 51, ../sass/_typography.scss */
 ul {
   list-style-type: disc;
 }
 
+/* line 52, ../sass/_typography.scss */
 ol {
   list-style-type: decimal;
 }
 
+/* line 53, ../sass/_typography.scss */
 dl {
   margin: 0 0 1.5em 0;
 }
 
+/* line 54, ../sass/_typography.scss */
 dl dt {
   font-weight: bold;
 }
 
+/* line 55, ../sass/_typography.scss */
 dd {
   margin-left: 1.5em;
 }
 
+/* line 63, ../sass/_typography.scss */
 ::-moz-selection {
   background: #e7592b;
   color: #fff;
   text-shadow: none;
 }
 
+/* line 64, ../sass/_typography.scss */
 ::selection {
   background: #e7592b;
   color: #fff;
@@ -445,20 +529,24 @@ dd {
 /* ==========================================================================
    HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
    ========================================================================== */
+/* line 10, ../sass/main.scss */
 html, button, input, select, textarea {
   color: #222;
 }
 
+/* line 15, ../sass/main.scss */
 body {
   font-size: 1em;
   line-height: 1.4;
 }
 
+/* line 20, ../sass/main.scss */
 ::-moz-selection, ::selection {
   background: #b3d4fc;
   text-shadow: none;
 }
 
+/* line 25, ../sass/main.scss */
 hr {
   display: block;
   height: 1px;
@@ -468,20 +556,24 @@ hr {
   padding: 0;
 }
 
+/* line 34, ../sass/main.scss */
 img {
   vertical-align: middle;
 }
 
+/* line 38, ../sass/main.scss */
 fieldset {
   border: 0;
   margin: 0;
   padding: 0;
 }
 
+/* line 44, ../sass/main.scss */
 textarea {
   resize: vertical;
 }
 
+/* line 48, ../sass/main.scss */
 .chromeframe {
   margin: 0.2em 0;
   background: #ccc;
@@ -492,10 +584,12 @@ textarea {
 /* ===== Initializr Styles ==================================================
    Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
    ========================================================================== */
+/* line 59, ../sass/main.scss */
 body {
   font: 16px/26px Helvetica, Helvetica Neue, Arial;
 }
 
+/* line 63, ../sass/main.scss */
 .wrapper {
   width: 90%;
   margin: 0 5%;
@@ -504,27 +598,33 @@ body {
 /* ===================
     ALL: Theme Styles
    =================== */
+/* line 72, ../sass/main.scss */
 .header-container {
   border-bottom: 20px solid #e44d26;
 }
 
+/* line 76, ../sass/main.scss */
 .footer-container, .main aside {
   border-top: 20px solid #e44d26;
 }
 
+/* line 80, ../sass/main.scss */
 .header-container, .footer-container, .main aside {
   background: #f16529;
 }
 
+/* line 84, ../sass/main.scss */
 .title {
   color: white;
 }
 
 /*Styling for Posts*/
+/* line 89, ../sass/main.scss */
 .missing-posts {
   font-weight: bold;
 }
 
+/* line 93, ../sass/main.scss */
 .thumbnail {
   width: 150px;
   height: 150px;
@@ -533,12 +633,22 @@ body {
 }
 
 /* ==============
+      Comments
+   ============== */
+/* line 102, ../sass/main.scss */
+.commentlist {
+  clear: both;
+}
+
+/* ==============
     MOBILE: Menu
    ============== */
+/* line 110, ../sass/main.scss */
 nav ul {
   margin: 0;
   padding: 0;
 }
+/* line 114, ../sass/main.scss */
 nav a {
   display: block;
   margin-bottom: 10px;
@@ -549,9 +659,11 @@ nav a {
   color: white;
   background: #e44d26;
 }
+/* line 123, ../sass/main.scss */
 nav a:hover, nav a:visited {
   color: white;
 }
+/* line 126, ../sass/main.scss */
 nav a:hover {
   text-decoration: underline;
 }
@@ -559,17 +671,21 @@ nav a:hover {
 /* ==============
     MOBILE: Main
    ============== */
+/* line 136, ../sass/main.scss */
 .main {
   padding: 30px 0;
 }
+/* line 138, ../sass/main.scss */
 .main article h1 {
   font-size: 2em;
 }
+/* line 141, ../sass/main.scss */
 .main aside {
   color: white;
   padding: 0px 5% 10px;
 }
 
+/* line 147, ../sass/main.scss */
 .footer-container footer {
   color: white;
   padding: 20px 0;
@@ -578,6 +694,7 @@ nav a:hover {
 /* ===============
     ALL: IE Fixes
    =============== */
+/* line 156, ../sass/main.scss */
 .ie7 .title {
   padding-top: 20px;
 }
@@ -592,6 +709,7 @@ nav a:hover {
   /* ====================
       INTERMEDIATE: Menu
      ==================== */
+  /* line 173, ../sass/main.scss */
   nav a {
     float: left;
     width: 27%;
@@ -599,12 +717,15 @@ nav a:hover {
     padding: 25px 2%;
     margin-bottom: 0;
   }
+  /* line 181, ../sass/main.scss */
   nav li:first-child a {
     margin-left: 0;
   }
+  /* line 184, ../sass/main.scss */
   nav li:last-child a {
     margin-right: 0;
   }
+  /* line 188, ../sass/main.scss */
   nav ul li {
     display: inline;
   }
@@ -612,6 +733,7 @@ nav a:hover {
   /* ========================
       INTERMEDIATE: IE Fixes
      ======================== */
+  /* line 195, ../sass/main.scss */
   .oldie nav a {
     margin: 0 0.7%;
   }
@@ -620,6 +742,7 @@ nav a:hover {
   /* ====================
       WIDE: CSS3 Effects
      ==================== */
+  /* line 204, ../sass/main.scss */
   .header-container, .main aside {
     -webkit-box-shadow: 0 5px 10px #aaa;
     -moz-box-shadow: 0 5px 10px #aaa;
@@ -629,10 +752,12 @@ nav a:hover {
   /* ============
       WIDE: Menu
      ============ */
+  /* line 212, ../sass/main.scss */
   .title {
     float: left;
   }
 
+  /* line 215, ../sass/main.scss */
   nav {
     float: right;
     width: 38%;
@@ -641,10 +766,12 @@ nav a:hover {
   /* ============
       WIDE: Main
      ============ */
+  /* line 223, ../sass/main.scss */
   .main article {
     float: left;
     width: 57%;
   }
+  /* line 227, ../sass/main.scss */
   .main aside {
     float: right;
     width: 28%;
@@ -654,6 +781,7 @@ nav a:hover {
   /* ===============
       Maximal Width
      =============== */
+  /* line 238, ../sass/main.scss */
   .wrapper {
     width: 1026px;
     /* 1140px - 10% for margins */
@@ -663,12 +791,14 @@ nav a:hover {
 /* ==========================================================================
    Helper classes
    ========================================================================== */
+/* line 249, ../sass/main.scss */
 .ir {
   background-color: transparent;
   border: 0;
   overflow: hidden;
   *text-indent: -9999px;
 }
+/* line 254, ../sass/main.scss */
 .ir:before {
   content: "";
   display: block;
@@ -676,11 +806,13 @@ nav a:hover {
   height: 150%;
 }
 
+/* line 262, ../sass/main.scss */
 .hidden {
   display: none !important;
   visibility: hidden;
 }
 
+/* line 267, ../sass/main.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -691,6 +823,7 @@ nav a:hover {
   position: absolute;
   width: 1px;
 }
+/* line 277, ../sass/main.scss */
 .visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
   clip: auto;
   height: auto;
@@ -700,17 +833,21 @@ nav a:hover {
   width: auto;
 }
 
+/* line 288, ../sass/main.scss */
 .invisible {
   visibility: hidden;
 }
 
+/* line 292, ../sass/main.scss */
 .clearfix {
   *zoom: 1;
 }
+/* line 293, ../sass/main.scss */
 .clearfix:before {
   content: " ";
   display: table;
 }
+/* line 297, ../sass/main.scss */
 .clearfix:after {
   content: " ";
   display: table;
@@ -721,6 +858,7 @@ nav a:hover {
    Print styles
    ========================================================================== */
 @media print {
+  /* line 310, ../sass/main.scss */
   * {
     background: transparent !important;
     color: #000 !important;
@@ -729,16 +867,20 @@ nav a:hover {
     text-shadow: none !important;
   }
 
+  /* line 317, ../sass/main.scss */
   a {
     text-decoration: underline;
   }
+  /* line 319, ../sass/main.scss */
   a:visited {
     text-decoration: underline;
   }
+  /* line 322, ../sass/main.scss */
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
+  /* line 326, ../sass/main.scss */
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
@@ -746,28 +888,34 @@ nav a:hover {
   /*
    * Don't show links for images, or javascript/internal links
    */
+  /* line 332, ../sass/main.scss */
   .ir a:after {
     content: "";
   }
 
+  /* line 336, ../sass/main.scss */
   a[href^="javascript:"]:after, a[href^="#"]:after {
     content: "";
   }
 
+  /* line 340, ../sass/main.scss */
   pre, blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
 
+  /* line 344, ../sass/main.scss */
   thead {
     display: table-header-group;
     /* h5bp.com/t */
   }
 
+  /* line 348, ../sass/main.scss */
   tr {
     page-break-inside: avoid;
   }
 
+  /* line 351, ../sass/main.scss */
   img {
     page-break-inside: avoid;
     max-width: 100% !important;
@@ -777,11 +925,13 @@ nav a:hover {
     margin: 0.5cm;
 }
 
+  /* line 359, ../sass/main.scss */
   p, h2, h3 {
     orphans: 3;
     widows: 3;
   }
 
+  /* line 363, ../sass/main.scss */
   h2, h3 {
     page-break-after: avoid;
   }
