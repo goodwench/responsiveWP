@@ -8,7 +8,7 @@
    ========================================================================== */
 
 html, button, input, select, textarea {
-  color: #222;
+  color: $black;
   
 }
 
@@ -18,7 +18,7 @@ body {
 }
 
 ::-moz-selection, ::selection {
-  background: #b3d4fc;
+  background: $color0;
   text-shadow: none;
 }
 
@@ -53,7 +53,7 @@ h2 {
 .chromeframe {
   margin: 0.2em 0;
   background: #ccc;
-  color: #000;
+  color: $black;
   padding: 0.2em 0;
 }
 
@@ -75,15 +75,15 @@ body {
    =================== */
 
 .header-container {
-  border-bottom: 20px solid $color1;
+  border-bottom: 20px solid $color0;
 }
 
 .footer-container, .main aside {
-  border-top: 20px solid $color1;
+  border-top: 20px solid $color0;
 }
 
 .header-container, .footer-container, .main aside {
-  background: #f16529;
+  background: $color2;
 }
 
 .title {
@@ -114,12 +114,12 @@ body {
     color: white;
 
     h2 {
-      color: #fff;
+      color: $color1;
       font-size: 20px;
     }
 
     a{
-      color: #f2a787;
+      color: $color3;
       text-decoration: none;
 
       &:hover{
@@ -145,7 +145,7 @@ body {
       h3 {        
         font-size: 20px;
         font-weight: bold;
-        color: $color1;
+        color: $color0;
         text-shadow: 1px 1px #ddd;
       }
       
@@ -158,6 +158,18 @@ body {
 
             .comment-meta {
               font-size: 11px;
+
+              a {
+                color: $color0;
+
+                &:visited{
+                  color: $color0;
+                }
+
+                &:hover, &:active{
+                  $color2;
+                }
+              }
             }
 
             .comment-author {
@@ -166,16 +178,10 @@ body {
               padding: 5px 0;
             } 
 
-            .odd {
-              background: #e2e2e2; /* Old browsers */
-              background: -moz-linear-gradient(top,  #e2e2e2 0%, #f9f9f9 100%); /* FF3.6+ */
-              background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e2e2e2), color-stop(100%,#f9f9f9)); /* Chrome,Safari4+ */
-              background: -webkit-linear-gradient(top,  #e2e2e2 0%,#f9f9f9 100%); /* Chrome10+,Safari5.1+ */
-              background: -o-linear-gradient(top,  #e2e2e2 0%,#f9f9f9 100%); /* Opera 11.10+ */
-              background: -ms-linear-gradient(top,  #e2e2e2 0%,#f9f9f9 100%); /* IE10+ */
-              background: linear-gradient(to bottom,  #e2e2e2 0%,#f9f9f9 100%); /* W3C */
-              filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#f9f9f9',GradientType=0 ); /* IE6-9 */
-           
+            .children li {              
+              background-color: $grad1; // Old browsers
+              @include filter-gradient($grad1, $grad2, vertical); // IE6-9
+              @include background-image(linear-gradient(top,  $grad1 0%,$grad2 100%));           
             }       
           } 
 
@@ -214,7 +220,7 @@ body {
           font-size: 12px;
           
           line-height: 2;
-          color: #5e5e5e;
+          color: $black;
         }   
       }
 
@@ -259,7 +265,7 @@ nav {
     text-decoration: none;
     font-weight: bold;
     color: white;
-    background: $color1;
+    background: $color0;
     &:hover, &:visited {
       color: white;
     }
@@ -449,7 +455,7 @@ nav {
 @media print {
   * {
     background: transparent !important;
-    color: #000 !important;
+    color: $black !important;
     /* Black prints faster: h5bp.com/s */
     box-shadow: none !important;
     text-shadow: none !important;

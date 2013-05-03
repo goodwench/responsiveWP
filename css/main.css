@@ -1,920 +1,106 @@
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-nav,
-section,
-summary {
-  display: block;
-}
+/*
+Syntax error: Invalid CSS after "...        $color2": expected ":", was ";"
+        on line 170 of C:/Users/lisak/Documents/responsiveWP/sass/main.scss
 
-audio,
-canvas,
-video {
-  display: inline-block;
-  *display: inline;
-  *zoom: 1;
-}
-
-audio:not([controls]) {
-  display: none;
-  height: 0;
-}
-
-[hidden] {
-  display: none;
-}
-
-html {
-  font-size: 100%;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-}
-
-html,
-button,
-input,
-select,
-textarea {
-  font-family: sans-serif;
-}
-
-body {
-  margin: 0;
-}
-
-a:focus {
-  outline: thin dotted;
-}
-
-a:active,
-a:hover {
-  outline: 0;
-}
-
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
-
-h2 {
-  font-size: 1.5em;
-  margin: 0.83em 0;
-}
-
-h3 {
-  font-size: 1.17em;
-  margin: 1em 0;
-}
-
-h4 {
-  font-size: 1em;
-  margin: 1.33em 0;
-}
-
-h5 {
-  font-size: 0.83em;
-  margin: 1.67em 0;
-}
-
-h6 {
-  font-size: 0.75em;
-  margin: 2.33em 0;
-}
-
-abbr[title] {
-  border-bottom: 1px dotted;
-}
-
-b,
-strong {
-  font-weight: bold;
-}
-
-blockquote {
-  margin: 1em 40px;
-}
-
-dfn {
-  font-style: italic;
-}
-
-mark {
-  background: #ff0;
-  color: #000;
-}
-
-p,
-pre {
-  margin: 1em 0;
-}
-
-code,
-kbd,
-pre,
-samp {
-  font-family: monospace, serif;
-  _font-family: 'courier new', monospace;
-  font-size: 1em;
-}
-
-pre {
+Backtrace:
+C:/Users/lisak/Documents/responsiveWP/sass/main.scss:170
+C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:1129:in `expected'
+C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:1066:in `expected'
+C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:1061:in `tok!'
+C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:495:in `variable'
+C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:537:in `block_child'
+C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:526:in `block_contents'
+C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:518:in `block'
+C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:512:in `ruleset'
+C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:574:in `declaration_or_ruleset'
+org/jruby/RubyProc.java:268:in `call'
+org/jruby/RubyProc.java:228:in `call'
+C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:1104:in `rethrow'
+C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:575:in `declaration_or_ruleset'
+C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:537:in `block_child'
+C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:529:in `block_contents'
+C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:518:in `block'
+C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:512:in `ruleset'
+C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:574:in `declaration_or_ruleset'
+org/jruby/RubyProc.java:268:in `call'
+org/jruby/RubyProc.java:228:in `call'
+C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:1104:in `rethrow'
+C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:575:in `declaration_or_ruleset'
+C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:537:in `block_child'
+C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:529:in `block_contents'
+C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:518:in `block'
+C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:512:in `ruleset'
+C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:574:in `declaration_or_ruleset'
+org/jruby/RubyProc.java:268:in `call'
+org/jruby/RubyProc.java:228:in `call'
+C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:1104:in `rethrow'
+C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:575:in `declaration_or_ruleset'
+C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:537:in `block_child'
+C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:529:in `block_contents'
+C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:518:in `block'
+C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:512:in `ruleset'
+C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:574:in `declaration_or_ruleset'
+org/jruby/RubyProc.java:268:in `call'
+org/jruby/RubyProc.java:228:in `call'
+C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:1104:in `rethrow'
+C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:575:in `declaration_or_ruleset'
+C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:537:in `block_child'
+C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:526:in `block_contents'
+C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:518:in `block'
+C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:512:in `ruleset'
+C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:574:in `declaration_or_ruleset'
+org/jruby/RubyProc.java:268:in `call'
+org/jruby/RubyProc.java:228:in `call'
+C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:1104:in `rethrow'
+C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:575:in `declaration_or_ruleset'
+C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:537:in `block_child'
+C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:529:in `block_contents'
+C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:518:in `block'
+C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:512:in `ruleset'
+C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:536:in `block_child'
+C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:529:in `block_contents'
+C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:70:in `stylesheet'
+C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:27:in `parse'
+C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/engine.rb:342:in `_to_tree'
+C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/engine.rb:315:in `_render'
+C:/Program Files (x86)/Scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/engine.rb:262:in `render'
+C:/Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:140:in `compile'
+C:/Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
+C:/Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:139:in `compile'
+C:/Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/lib/compass/logger.rb:45:in `red'
+C:/Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:138:in `compile'
+C:/Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:118:in `compile_if_required'
+C:/Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:103:in `run'
+org/jruby/RubyArray.java:1603:in `each'
+C:/Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `run'
+C:/Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
+C:/Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:100:in `run'
+C:/Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:147:in `recompile'
+org/jruby/RubyMethod.java:133:in `call'
+org/jruby/RubyProc.java:268:in `call'
+org/jruby/RubyProc.java:228:in `call'
+C:/Program Files (x86)/Scout/vendor/gems/gems/fssm-0.2.9/lib/fssm/path.rb:73:in `run_callback'
+C:/Program Files (x86)/Scout/vendor/gems/gems/fssm-0.2.9/lib/fssm/path.rb:55:in `callback_action'
+C:/Program Files (x86)/Scout/vendor/gems/gems/fssm-0.2.9/lib/fssm/path.rb:35:in `update'
+C:/Program Files (x86)/Scout/vendor/gems/gems/fssm-0.2.9/lib/fssm/state/directory.rb:39:in `modified'
+org/jruby/RubyArray.java:1603:in `each'
+C:/Program Files (x86)/Scout/vendor/gems/gems/fssm-0.2.9/lib/fssm/state/directory.rb:37:in `modified'
+C:/Program Files (x86)/Scout/vendor/gems/gems/fssm-0.2.9/lib/fssm/state/directory.rb:18:in `refresh'
+C:/Program Files (x86)/Scout/vendor/gems/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:17:in `run'
+org/jruby/RubyArray.java:1603:in `each'
+C:/Program Files (x86)/Scout/vendor/gems/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:17:in `run'
+org/jruby/RubyKernel.java:1419:in `loop'
+C:/Program Files (x86)/Scout/vendor/gems/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:15:in `run'
+C:/Program Files (x86)/Scout/vendor/gems/gems/fssm-0.2.9/lib/fssm/monitor.rb:26:in `run'
+C:/Program Files (x86)/Scout/vendor/gems/gems/fssm-0.2.9/lib/fssm.rb:70:in `monitor'
+C:/Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:87:in `perform'
+C:/Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/lib/compass/commands/base.rb:18:in `execute'
+C:/Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/lib/compass/commands/project_base.rb:19:in `execute'
+C:/Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
+C:/Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+C:\Program Files (x86)\Scout\bin\compass:12:in `(root)'
+*/
+body:before {
   white-space: pre;
-  white-space: pre-wrap;
-  word-wrap: break-word;
-}
-
-q {
-  quotes: none;
-}
-
-q:before,
-q:after {
-  content: '';
-  content: none;
-}
-
-small {
-  font-size: 75%;
-}
-
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-sup {
-  top: -0.5em;
-}
-
-sub {
-  bottom: -0.25em;
-}
-
-dl,
-menu,
-ol,
-ul {
-  margin: 1em 0;
-}
-
-dd {
-  margin: 0 0 0 40px;
-}
-
-menu,
-ol,
-ul {
-  padding: 0 0 0 40px;
-}
-
-nav ul,
-nav ol {
-  list-style: none;
-  list-style-image: none;
-}
-
-img {
-  border: 0;
-  -ms-interpolation-mode: bicubic;
-}
-
-svg:not(:root) {
-  overflow: hidden;
-}
-
-figure {
-  margin: 0;
-}
-
-form {
-  margin: 0;
-}
-
-fieldset {
-  border: 1px solid #c0c0c0;
-  margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em;
-}
-
-legend {
-  border: 0;
-  padding: 0;
-  white-space: normal;
-  *margin-left: -7px;
-}
-
-button,
-input,
-select,
-textarea {
-  font-size: 100%;
-  margin: 0;
-  vertical-align: baseline;
-  *vertical-align: middle;
-}
-
-button,
-input {
-  line-height: normal;
-}
-
-button,
-html input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-  -webkit-appearance: button;
-  cursor: pointer;
-  *overflow: visible;
-}
-
-button[disabled],
-input[disabled] {
-  cursor: default;
-}
-
-input[type="checkbox"],
-input[type="radio"] {
-  box-sizing: border-box;
-  padding: 0;
-  *height: 13px;
-  *width: 13px;
-}
-
-input[type="search"] {
-  -webkit-appearance: textfield;
-  -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
-  box-sizing: content-box;
-}
-
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-
-button::-moz-focus-inner,
-input::-moz-focus-inner {
-  border: 0;
-  padding: 0;
-}
-
-textarea {
-  overflow: auto;
-  vertical-align: top;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-body {
-  font: sans-serif 13px/1.4 normal;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: sans-serif;
-}
-
-a, a:visited {
-  color: #e44d26;
-  text-decoration: none;
-}
-
-a:focus {
-  outline: thin dotted;
-}
-
-a:hover, a:active {
-  outline: 0;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-p {
-  margin: 0 0 1.5em;
-}
-
-blockquote {
-  color: #666;
-  font-style: italic;
-  margin: 1.5em;
-}
-
-b, strong, dfn {
-  font-weight: bold;
-}
-
-em, dfn {
-  font-style: italic;
-}
-
-abbr, acronym {
-  cursor: help;
-}
-
-abbr[title] {
-  border-bottom: none;
-  text-transform: uppercase;
-}
-
-address {
-  font-style: normal;
-  margin: 0 0 1.5em;
-}
-
-del {
-  color: #666;
-}
-
-ins {
-  background: #ff9;
-  color: #000;
-  text-decoration: none;
-}
-
-mark {
-  background: #ff0;
-  color: #000;
-  font-style: italic;
-  font-weight: bold;
-}
-
-pre {
-  margin: 1.5em 0;
-  white-space: pre;
-}
-
-pre, code, kbd, samp, tt {
-  font: 1em 'andale mono', 'lucida console', monospace;
-  line-height: 1.5;
-}
-
-pre {
-  white-space: pre;
-  white-space: pre-wrap;
-  word-wrap: break-word;
-}
-
-q {
-  quotes: none;
-}
-
-q:before, q:after {
-  content: "";
-  content: none;
-}
-
-small {
-  font-size: 85%;
-}
-
-sub, sup {
-  position: relative;
-  font-size: 75%;
-  line-height: 0;
-  vertical-align: baseline;
-}
-
-sup {
-  top: -0.5em;
-}
-
-sub {
-  bottom: -0.25em;
-}
-
-nav ul, nav ol {
-  list-style: none;
-  list-style-image: none;
-  margin: 0;
-  padding: 0;
-}
-
-li ul, li ol {
-  margin: 0;
-}
-
-ul, ol {
-  margin: 0 1.5em 1.5em 0;
-  padding-left: 1.5em;
-}
-
-ul {
-  list-style-type: disc;
-}
-
-ol {
-  list-style-type: decimal;
-}
-
-dl {
-  margin: 0 0 1.5em 0;
-}
-
-dl dt {
-  font-weight: bold;
-}
-
-dd {
-  margin-left: 1.5em;
-}
-
-::-moz-selection {
-  background: #e44d26;
-  color: #fff;
-  text-shadow: none;
-}
-
-::selection {
-  background: #e44d26;
-  color: #fff;
-  text-shadow: none;
-}
-
-/* ==========================================================================
-   HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
-   ========================================================================== */
-html, button, input, select, textarea {
-  color: #222;
-}
-
-body {
-  font-size: 1em;
-  line-height: 1.4;
-}
-
-::-moz-selection, ::selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
-}
-
-img {
-  vertical-align: middle;
-}
-
-fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
-}
-
-textarea {
-  resize: vertical;
-}
-
-h2 {
-  font-size: 24px;
-  color: black;
-}
-
-.chromeframe {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
-}
-
-/* ===== Initializr Styles ==================================================
-   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
-   ========================================================================== */
-body {
-  font: 16px/26px Helvetica, Helvetica Neue, Arial;
-}
-
-.wrapper {
-  width: 90%;
-  margin: 0 5%;
-}
-
-/* ===================
-    ALL: Theme Styles
-   =================== */
-.header-container {
-  border-bottom: 20px solid #e44d26;
-}
-
-.footer-container, .main aside {
-  border-top: 20px solid #e44d26;
-}
-
-.header-container, .footer-container, .main aside {
-  background: #f16529;
-}
-
-.title {
-  color: white;
-}
-
-/*Styling for Posts*/
-.missing-posts {
-  font-weight: bold;
-}
-
-.post-edit-link {
-  clear: both;
-  font-size: 90%;
-  font-style: italic;
-}
-
-.thumbnail {
-  width: 150px;
-  height: 150px;
-  display: inline;
-  float: left;
-}
-.thumbnail:before, .thumbnail:after {
-  content: "";
-  display: table;
-}
-.thumbnail:after {
-  clear: both;
-}
-.thumbnail {
-  zoom: 1;
-}
-
-/* ==============
-   Sidebar Styles
-   ============== */
-aside.sidebar {
-  color: white;
-}
-aside.sidebar h2 {
-  color: #fff;
-  font-size: 20px;
-}
-aside.sidebar a {
-  color: #f2a787;
-  text-decoration: none;
-}
-aside.sidebar a:hover {
-  text-decoration: underline;
-}
-
-/* ==============
-      Comments
-   ============== */
-.comment-container {
-  clear: both;
-}
-.comment-container .reply {
-  font-size: 90%;
-  margin-bottom: 8px;
-}
-.comment-container h3 {
-  font-size: 20px;
-  font-weight: bold;
-  color: #e44d26;
-  text-shadow: 1px 1px #ddd;
-}
-.comment-container .commentlist li {
-  list-style-type: none !important;
-  padding: 8px;
-  font-size: 13px;
-}
-.comment-container .commentlist li .comment-meta {
-  font-size: 11px;
-}
-.comment-container .commentlist li .comment-author {
-  border-top: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
-  padding: 5px 0;
-}
-.comment-container .commentlist li .odd {
-  background: #e2e2e2;
-  /* Old browsers */
-  background: -moz-linear-gradient(top, #e2e2e2 0%, #f9f9f9 100%);
-  /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e2e2e2), color-stop(100%, #f9f9f9));
-  /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, #e2e2e2 0%, #f9f9f9 100%);
-  /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, #e2e2e2 0%, #f9f9f9 100%);
-  /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, #e2e2e2 0%, #f9f9f9 100%);
-  /* IE10+ */
-  background: linear-gradient(to bottom, #e2e2e2 0%, #f9f9f9 100%);
-  /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e2e2e2', endColorstr='#f9f9f9',GradientType=0 );
-  /* IE6-9 */
-}
-
-/* Comment form */
-#respond {
-  margin-top: 48px;
-}
-#respond #reply-title {
-  font-size: 16px;
-  line-height: 1.5;
-}
-#respond #reply-title #cancel-comment-reply-link {
-  margin-left: 10px;
-  font-weight: normal;
-  font-size: 12px;
-}
-#respond form {
-  margin: 24px 0;
-}
-#respond form p {
-  margin: 11px 0;
-}
-#respond form p.logged-in-as {
-  margin-bottom: 24px;
-}
-#respond form p.form-allowed-tags {
-  margin: 0;
-  font-size: 12px;
-  line-height: 2;
-  color: #5e5e5e;
-}
-#respond form label {
-  display: block;
-  line-height: 1.714285714;
-}
-#respond form input[type="text"], #respond form textarea {
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  font-size: 12px;
-  line-height: 1.714285714;
-  padding: 10px;
-  width: 100%;
-}
-
-.required {
-  color: red;
-}
-
-/* ==============
-    MOBILE: Menu
-   ============== */
-nav ul {
-  margin: 0;
-  padding: 0;
-}
-nav a {
-  display: block;
-  margin-bottom: 10px;
-  padding: 15px 0;
-  text-align: center;
-  text-decoration: none;
-  font-weight: bold;
-  color: white;
-  background: #e44d26;
-}
-nav a:hover, nav a:visited {
-  color: white;
-}
-nav a:hover {
-  text-decoration: underline;
-}
-
-/* ==============
-    MOBILE: Main
-   ============== */
-.main {
-  padding: 30px 0;
-}
-.main article h1 {
-  font-size: 2em;
-}
-.main aside {
-  color: white;
-  padding: 0px 5% 10px;
-}
-
-.footer-container footer {
-  color: white;
-  padding: 20px 0;
-}
-
-/* ===============
-    ALL: IE Fixes
-   =============== */
-.ie7 .title {
-  padding-top: 20px;
-}
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-/* ==========================================================================
-   Media Queries
-   ========================================================================== */
-@media only screen and (min-width: 480px) {
-  /* ====================
-      INTERMEDIATE: Menu
-     ==================== */
-  nav a {
-    float: left;
-    width: 27%;
-    margin: 0 1.7%;
-    padding: 25px 2%;
-    margin-bottom: 0;
-  }
-  nav li:first-child a {
-    margin-left: 0;
-  }
-  nav li:last-child a {
-    margin-right: 0;
-  }
-  nav ul li {
-    display: inline;
-  }
-
-  /* ========================
-      INTERMEDIATE: IE Fixes
-     ======================== */
-  .oldie nav a {
-    margin: 0 0.7%;
-  }
-}
-@media only screen and (min-width: 768px) {
-  /* ====================
-      WIDE: CSS3 Effects
-     ==================== */
-  .header-container, .main aside {
-    -webkit-box-shadow: 0 5px 10px #aaa;
-    -moz-box-shadow: 0 5px 10px #aaa;
-    box-shadow: 0 5px 10px #aaa;
-  }
-
-  /* ============
-      WIDE: Menu
-     ============ */
-  .title {
-    float: left;
-  }
-
-  nav {
-    float: right;
-    width: 38%;
-  }
-
-  /* ============
-      WIDE: Main
-     ============ */
-  .main article {
-    float: left;
-    width: 57%;
-  }
-  .main aside {
-    float: right;
-    width: 28%;
-  }
-}
-@media only screen and (min-width: 1140px) {
-  /* ===============
-      Maximal Width
-     =============== */
-  .wrapper {
-    width: 1026px;
-    /* 1140px - 10% for margins */
-    margin: 0 auto;
-  }
-}
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-.ir {
-  background-color: transparent;
-  border: 0;
-  overflow: hidden;
-  *text-indent: -9999px;
-}
-.ir:before {
-  content: "";
-  display: block;
-  width: 0;
-  height: 150%;
-}
-
-.hidden {
-  display: none !important;
-  visibility: hidden;
-}
-
-.visuallyhidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-}
-.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  width: auto;
-}
-
-.invisible {
-  visibility: hidden;
-}
-
-.clearfix {
-  *zoom: 1;
-}
-.clearfix:before {
-  content: " ";
-  display: table;
-}
-.clearfix:after {
-  content: " ";
-  display: table;
-  clear: both;
-}
-
-/* ==========================================================================
-   Print styles
-   ========================================================================== */
-@media print {
-  * {
-    background: transparent !important;
-    color: #000 !important;
-    /* Black prints faster: h5bp.com/s */
-    box-shadow: none !important;
-    text-shadow: none !important;
-  }
-
-  a {
-    text-decoration: underline;
-  }
-  a:visited {
-    text-decoration: underline;
-  }
-  a[href]:after {
-    content: " (" attr(href) ")";
-  }
-
-  abbr[title]:after {
-    content: " (" attr(title) ")";
-  }
-
-  /*
-   * Don't show links for images, or javascript/internal links
-   */
-  .ir a:after {
-    content: "";
-  }
-
-  a[href^="javascript:"]:after, a[href^="#"]:after {
-    content: "";
-  }
-
-  pre, blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
-  }
-
-  thead {
-    display: table-header-group;
-    /* h5bp.com/t */
-  }
-
-  tr {
-    page-break-inside: avoid;
-  }
-
-  img {
-    page-break-inside: avoid;
-    max-width: 100% !important;
-  }
-
-  @page {
-    margin: 0.5cm;
-}
-
-  p, h2, h3 {
-    orphans: 3;
-    widows: 3;
-  }
-
-  h2, h3 {
-    page-break-after: avoid;
-  }
-}
+  font-family: monospace;
+  content: "Syntax error: Invalid CSS after \"...        $color2\": expected \":\", was \";\"\A         on line 170 of C:/Users/lisak/Documents/responsiveWP/sass/main.scss"; }
