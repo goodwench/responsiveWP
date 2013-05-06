@@ -182,13 +182,14 @@
 		));
 	}
 
-	/*//Add some post types
-	function my_events_posts() {
-	register_post_type( 'events',
+	//HELPFUL HINT: If your custom post types are returning a 404 error, go into Settings > Permalinks and click Save Changes
+	//Add some post types
+	function my_fancy_posts() {
+	register_post_type( 'fancy',
 	    array( 
-			'label' => __('Events'), 
+			'label' => __('Fancy Posts'), 
 			'public' => true, 
-			'show_ui' => true,
+			'show_ui' => true,			
 			'show_in_nav_menus' => false,
 			'menu_position' => 5,
 			'supports' => array(
@@ -197,14 +198,18 @@
 				'editor',
 				'thumbnail',
 				'revisions',
-				'post-formats',
 				'page-attributes',
 				'exerpt'),
+			'rewrite' => array(
+			'slug' => 'fancy-posts',
+			'with_front' => false
+			),
+			'has_archive' => 'fancy-posts'
 			//'taxonomies' => array('post_tag')
 			) 
 		);
 	}
-	add_action('init', 'my_events_posts');*/
+	add_action('init', 'my_fancy_posts');
 
 	//Make Pretty Excerpts
 	function excerpt_ellipse($text) {
