@@ -3,9 +3,7 @@
         
         <!-- All this stuff in here only shows up if you DON'T have any widgets active in this zone -->
 
-    	<?php get_search_form(); ?>
-        
-        <?php wp_list_pages('title_li=<h2>Pages</h2>' ); ?>
+    	<?php get_search_form(); ?>         
         
         <h2>Archives</h2>
         <ul>

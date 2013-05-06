@@ -125,7 +125,7 @@ body {
       &:hover{
         text-decoration: underline;
       }
-    }
+    }     
   } 
 
 
@@ -167,7 +167,7 @@ body {
                 }
 
                 &:hover, &:active{
-                  $color2;
+                  color: $color2;
                 }
               }
             }

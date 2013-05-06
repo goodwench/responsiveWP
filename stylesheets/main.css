@@ -1,87 +1,922 @@
-/*
-Syntax error: Invalid CSS after "...        $color2": expected ":", was ";"
-        on line 170 of C:/Users/lisak/Documents/responsiveWP/sass/main.scss
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+  display: block;
+}
 
-Backtrace:
-C:/Users/lisak/Documents/responsiveWP/sass/main.scss:170
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.3/lib/sass/scss/parser.rb:1134:in `expected'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.3/lib/sass/scss/parser.rb:1070:in `expected'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.3/lib/sass/scss/parser.rb:1065:in `tok!'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.3/lib/sass/scss/parser.rb:498:in `variable'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.3/lib/sass/scss/parser.rb:540:in `block_child'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.3/lib/sass/scss/parser.rb:529:in `block_contents'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.3/lib/sass/scss/parser.rb:521:in `block'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.3/lib/sass/scss/parser.rb:515:in `ruleset'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.3/lib/sass/scss/parser.rb:577:in `block in declaration_or_ruleset'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.3/lib/sass/scss/parser.rb:1108:in `call'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.3/lib/sass/scss/parser.rb:1108:in `rethrow'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.3/lib/sass/scss/parser.rb:578:in `declaration_or_ruleset'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.3/lib/sass/scss/parser.rb:540:in `block_child'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.3/lib/sass/scss/parser.rb:532:in `block_contents'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.3/lib/sass/scss/parser.rb:521:in `block'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.3/lib/sass/scss/parser.rb:515:in `ruleset'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.3/lib/sass/scss/parser.rb:577:in `block in declaration_or_ruleset'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.3/lib/sass/scss/parser.rb:1108:in `call'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.3/lib/sass/scss/parser.rb:1108:in `rethrow'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.3/lib/sass/scss/parser.rb:578:in `declaration_or_ruleset'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.3/lib/sass/scss/parser.rb:540:in `block_child'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.3/lib/sass/scss/parser.rb:532:in `block_contents'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.3/lib/sass/scss/parser.rb:521:in `block'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.3/lib/sass/scss/parser.rb:515:in `ruleset'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.3/lib/sass/scss/parser.rb:577:in `block in declaration_or_ruleset'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.3/lib/sass/scss/parser.rb:1108:in `call'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.3/lib/sass/scss/parser.rb:1108:in `rethrow'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.3/lib/sass/scss/parser.rb:578:in `declaration_or_ruleset'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.3/lib/sass/scss/parser.rb:540:in `block_child'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.3/lib/sass/scss/parser.rb:532:in `block_contents'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.3/lib/sass/scss/parser.rb:521:in `block'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.3/lib/sass/scss/parser.rb:515:in `ruleset'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.3/lib/sass/scss/parser.rb:577:in `block in declaration_or_ruleset'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.3/lib/sass/scss/parser.rb:1108:in `call'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.3/lib/sass/scss/parser.rb:1108:in `rethrow'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.3/lib/sass/scss/parser.rb:578:in `declaration_or_ruleset'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.3/lib/sass/scss/parser.rb:540:in `block_child'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.3/lib/sass/scss/parser.rb:529:in `block_contents'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.3/lib/sass/scss/parser.rb:521:in `block'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.3/lib/sass/scss/parser.rb:515:in `ruleset'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.3/lib/sass/scss/parser.rb:577:in `block in declaration_or_ruleset'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.3/lib/sass/scss/parser.rb:1108:in `call'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.3/lib/sass/scss/parser.rb:1108:in `rethrow'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.3/lib/sass/scss/parser.rb:578:in `declaration_or_ruleset'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.3/lib/sass/scss/parser.rb:540:in `block_child'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.3/lib/sass/scss/parser.rb:532:in `block_contents'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.3/lib/sass/scss/parser.rb:521:in `block'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.3/lib/sass/scss/parser.rb:515:in `ruleset'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.3/lib/sass/scss/parser.rb:539:in `block_child'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.3/lib/sass/scss/parser.rb:532:in `block_contents'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.3/lib/sass/scss/parser.rb:70:in `stylesheet'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.3/lib/sass/scss/parser.rb:27:in `parse'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.3/lib/sass/engine.rb:342:in `_to_tree'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.3/lib/sass/engine.rb:315:in `_render'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.3/lib/sass/engine.rb:262:in `render'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.13.alpha.0/lib/compass/compiler.rb:140:in `block (2 levels) in compile'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.13.alpha.0/lib/compass/compiler.rb:126:in `timed'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.13.alpha.0/lib/compass/compiler.rb:139:in `block in compile'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.13.alpha.0/lib/compass/logger.rb:45:in `red'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.13.alpha.0/lib/compass/compiler.rb:138:in `compile'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.13.alpha.0/lib/compass/compiler.rb:118:in `compile_if_required'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.13.alpha.0/lib/compass/compiler.rb:103:in `block (2 levels) in run'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.13.alpha.0/lib/compass/compiler.rb:101:in `each'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.13.alpha.0/lib/compass/compiler.rb:101:in `block in run'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.13.alpha.0/lib/compass/compiler.rb:126:in `timed'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.13.alpha.0/lib/compass/compiler.rb:100:in `run'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.13.alpha.0/lib/compass/commands/update_project.rb:45:in `perform'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.13.alpha.0/lib/compass/commands/base.rb:18:in `execute'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.13.alpha.0/lib/compass/commands/project_base.rb:19:in `execute'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.13.alpha.0/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.13.alpha.0/lib/compass/exec/sub_command_ui.rb:15:in `run!'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.13.alpha.0/bin/compass:29:in `block in <top (required)>'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.13.alpha.0/bin/compass:43:in `call'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.13.alpha.0/bin/compass:43:in `<top (required)>'
-C:/Ruby193/bin/compass:19:in `load'
-C:/Ruby193/bin/compass:19:in `<main>'
-*/
-body:before {
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden] {
+  display: none;
+}
+
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+html,
+button,
+input,
+select,
+textarea {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin: 0.83em 0;
+}
+
+h3 {
+  font-size: 1.17em;
+  margin: 1em 0;
+}
+
+h4 {
+  font-size: 1em;
+  margin: 1.33em 0;
+}
+
+h5 {
+  font-size: 0.83em;
+  margin: 1.67em 0;
+}
+
+h6 {
+  font-size: 0.75em;
+  margin: 2.33em 0;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+blockquote {
+  margin: 1em 40px;
+}
+
+dfn {
+  font-style: italic;
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+p,
+pre {
+  margin: 1em 0;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  _font-family: 'courier new', monospace;
+  font-size: 1em;
+}
+
+pre {
   white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Invalid CSS after \"...        $color2\": expected \":\", was \";\"\A         on line 170 of C:/Users/lisak/Documents/responsiveWP/sass/main.scss"; }
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+q {
+  quotes: none;
+}
+
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+small {
+  font-size: 75%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+dl,
+menu,
+ol,
+ul {
+  margin: 1em 0;
+}
+
+dd {
+  margin: 0 0 0 40px;
+}
+
+menu,
+ol,
+ul {
+  padding: 0 0 0 40px;
+}
+
+nav ul,
+nav ol {
+  list-style: none;
+  list-style-image: none;
+}
+
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+figure {
+  margin: 0;
+}
+
+form {
+  margin: 0;
+}
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+  border: 0;
+  padding: 0;
+  white-space: normal;
+  *margin-left: -7px;
+}
+
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle;
+}
+
+button,
+input {
+  line-height: normal;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+  *overflow: visible;
+}
+
+button[disabled],
+input[disabled] {
+  cursor: default;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+  *height: 13px;
+  *width: 13px;
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font: sans-serif 13px/1.4 normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: sans-serif;
+}
+
+a, a:visited {
+  color: #95aa61;
+  text-decoration: none;
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+a:hover, a:active {
+  outline: 0;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+p {
+  margin: 0 0 1.5em;
+}
+
+blockquote {
+  color: #666;
+  font-style: italic;
+  margin: 1.5em;
+}
+
+b, strong, dfn {
+  font-weight: bold;
+}
+
+em, dfn {
+  font-style: italic;
+}
+
+abbr, acronym {
+  cursor: help;
+}
+
+abbr[title] {
+  border-bottom: none;
+  text-transform: uppercase;
+}
+
+address {
+  font-style: normal;
+  margin: 0 0 1.5em;
+}
+
+del {
+  color: #666;
+}
+
+ins {
+  background: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+pre {
+  margin: 1.5em 0;
+  white-space: pre;
+}
+
+pre, code, kbd, samp, tt {
+  font: 1em 'andale mono', 'lucida console', monospace;
+  line-height: 1.5;
+}
+
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+q {
+  quotes: none;
+}
+
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+small {
+  font-size: 85%;
+}
+
+sub, sup {
+  position: relative;
+  font-size: 75%;
+  line-height: 0;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+nav ul, nav ol {
+  list-style: none;
+  list-style-image: none;
+  margin: 0;
+  padding: 0;
+}
+
+li ul, li ol {
+  margin: 0;
+}
+
+ul, ol {
+  margin: 0 1.5em 1.5em 0;
+  padding-left: 1.5em;
+}
+
+ul {
+  list-style-type: disc;
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+dl {
+  margin: 0 0 1.5em 0;
+}
+
+dl dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: 1.5em;
+}
+
+::-moz-selection {
+  background: #f6f8ee;
+  color: #fff;
+  text-shadow: none;
+}
+
+::selection {
+  background: #f6f8ee;
+  color: #fff;
+  text-shadow: none;
+}
+
+/* ==========================================================================
+   HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
+   ========================================================================== */
+html, button, input, select, textarea {
+  color: #121310;
+}
+
+body {
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+::-moz-selection, ::selection {
+  background: #95aa61;
+  text-shadow: none;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+img {
+  vertical-align: middle;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+textarea {
+  resize: vertical;
+}
+
+h2 {
+  font-size: 24px;
+  color: #121310;
+}
+
+.chromeframe {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #121310;
+  padding: 0.2em 0;
+}
+
+/* ===== Initializr Styles ==================================================
+   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
+   ========================================================================== */
+body {
+  font: 16px/26px Helvetica, Helvetica Neue, Arial;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 5%;
+}
+
+/* ===================
+    ALL: Theme Styles
+   =================== */
+.header-container {
+  border-bottom: 20px solid #95aa61;
+}
+
+.footer-container, .main aside {
+  border-top: 20px solid #95aa61;
+}
+
+.header-container, .footer-container, .main aside {
+  background: #d6e68a;
+}
+
+.title {
+  color: white;
+}
+
+/*Styling for Posts*/
+.missing-posts {
+  font-weight: bold;
+}
+
+.post-edit-link {
+  clear: both;
+  font-size: 90%;
+  font-style: italic;
+}
+
+.thumbnail {
+  width: 150px;
+  height: 150px;
+  display: inline;
+  float: left;
+}
+.thumbnail:before, .thumbnail:after {
+  content: "";
+  display: table;
+}
+.thumbnail:after {
+  clear: both;
+}
+.thumbnail {
+  zoom: 1;
+}
+
+/* ==============
+   Sidebar Styles
+   ============== */
+aside.sidebar {
+  color: white;
+}
+aside.sidebar h2 {
+  color: #f6f8ee;
+  font-size: 20px;
+}
+aside.sidebar a {
+  color: #899752;
+  text-decoration: none;
+}
+aside.sidebar a:hover {
+  text-decoration: underline;
+}
+
+/* ==============
+      Comments
+   ============== */
+.comment-container {
+  clear: both;
+}
+.comment-container .reply {
+  font-size: 90%;
+  margin-bottom: 8px;
+}
+.comment-container h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #95aa61;
+  text-shadow: 1px 1px #ddd;
+}
+.comment-container .commentlist li {
+  list-style-type: none !important;
+  padding: 8px;
+  font-size: 13px;
+}
+.comment-container .commentlist li .comment-meta {
+  font-size: 11px;
+}
+.comment-container .commentlist li .comment-meta a {
+  color: #95aa61;
+}
+.comment-container .commentlist li .comment-meta a:visited {
+  color: #95aa61;
+}
+.comment-container .commentlist li .comment-meta a:hover, .comment-container .commentlist li .comment-meta a:active {
+  color: #d6e68a;
+}
+.comment-container .commentlist li .comment-author {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 5px 0;
+}
+.comment-container .commentlist li .children li {
+  background-color: #e2e2e2;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFE2E2E2', endColorstr='#FFF9F9F9');
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e2e2e2), color-stop(100%, #f9f9f9));
+  background-image: -webkit-linear-gradient(top, #e2e2e2 0%, #f9f9f9 100%);
+  background-image: -moz-linear-gradient(top, #e2e2e2 0%, #f9f9f9 100%);
+  background-image: -o-linear-gradient(top, #e2e2e2 0%, #f9f9f9 100%);
+  background-image: -ms-linear-gradient(top, #e2e2e2 0%, #f9f9f9 100%);
+  background-image: linear-gradient(top, #e2e2e2 0%, #f9f9f9 100%);
+}
+
+/* Comment form */
+#respond {
+  margin-top: 48px;
+}
+#respond #reply-title {
+  font-size: 16px;
+  line-height: 1.5;
+}
+#respond #reply-title #cancel-comment-reply-link {
+  margin-left: 10px;
+  font-weight: normal;
+  font-size: 12px;
+}
+#respond form {
+  margin: 24px 0;
+}
+#respond form p {
+  margin: 11px 0;
+}
+#respond form p.logged-in-as {
+  margin-bottom: 24px;
+}
+#respond form p.form-allowed-tags {
+  margin: 0;
+  font-size: 12px;
+  line-height: 2;
+  color: #121310;
+}
+#respond form label {
+  display: block;
+  line-height: 1.714285714;
+}
+#respond form input[type="text"], #respond form textarea {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 12px;
+  line-height: 1.714285714;
+  padding: 10px;
+  width: 100%;
+}
+
+.required {
+  color: red;
+}
+
+/* ==============
+    MOBILE: Menu
+   ============== */
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+nav a {
+  display: block;
+  margin-bottom: 10px;
+  padding: 15px 0;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  background: #95aa61;
+}
+nav a:hover, nav a:visited {
+  color: white;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* ==============
+    MOBILE: Main
+   ============== */
+.main {
+  padding: 30px 0;
+}
+.main article h1 {
+  font-size: 2em;
+}
+.main aside {
+  color: white;
+  padding: 0px 5% 10px;
+}
+
+.footer-container footer {
+  color: white;
+  padding: 20px 0;
+}
+
+/* ===============
+    ALL: IE Fixes
+   =============== */
+.ie7 .title {
+  padding-top: 20px;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+@media only screen and (min-width: 480px) {
+  /* ====================
+      INTERMEDIATE: Menu
+     ==================== */
+  nav a {
+    float: left;
+    width: 27%;
+    margin: 0 1.7%;
+    padding: 25px 2%;
+    margin-bottom: 0;
+  }
+  nav li:first-child a {
+    margin-left: 0;
+  }
+  nav li:last-child a {
+    margin-right: 0;
+  }
+  nav ul li {
+    display: inline;
+  }
+
+  /* ========================
+      INTERMEDIATE: IE Fixes
+     ======================== */
+  .oldie nav a {
+    margin: 0 0.7%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /* ====================
+      WIDE: CSS3 Effects
+     ==================== */
+  .header-container, .main aside {
+    -webkit-box-shadow: 0 5px 10px #aaa;
+    -moz-box-shadow: 0 5px 10px #aaa;
+    box-shadow: 0 5px 10px #aaa;
+  }
+
+  /* ============
+      WIDE: Menu
+     ============ */
+  .title {
+    float: left;
+  }
+
+  nav {
+    float: right;
+    width: 38%;
+  }
+
+  /* ============
+      WIDE: Main
+     ============ */
+  .main article {
+    float: left;
+    width: 57%;
+  }
+  .main aside {
+    float: right;
+    width: 28%;
+  }
+}
+@media only screen and (min-width: 1140px) {
+  /* ===============
+      Maximal Width
+     =============== */
+  .wrapper {
+    width: 1026px;
+    /* 1140px - 10% for margins */
+    margin: 0 auto;
+  }
+}
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+.ir {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  *text-indent: -9999px;
+}
+.ir:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 150%;
+}
+
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+@media print {
+  * {
+    background: transparent !important;
+    color: #121310 !important;
+    /* Black prints faster: h5bp.com/s */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+  a:visited {
+    text-decoration: underline;
+  }
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links for images, or javascript/internal links
+   */
+  .ir a:after {
+    content: "";
+  }
+
+  a[href^="javascript:"]:after, a[href^="#"]:after {
+    content: "";
+  }
+
+  pre, blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  thead {
+    display: table-header-group;
+    /* h5bp.com/t */
+  }
+
+  tr {
+    page-break-inside: avoid;
+  }
+
+  img {
+    page-break-inside: avoid;
+    max-width: 100% !important;
+  }
+
+  @page {
+    margin: 0.5cm;
+}
+
+  p, h2, h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2, h3 {
+    page-break-after: avoid;
+  }
+}
