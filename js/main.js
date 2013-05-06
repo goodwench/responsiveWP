@@ -1,1 +1,3 @@
-
+$(function() {
+  $("label").inFieldLabels();
+});

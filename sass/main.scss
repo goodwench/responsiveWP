@@ -57,10 +57,6 @@ h2 {
   padding: 0.2em 0;
 }
 
-/* ===== Initializr Styles ==================================================
-   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
-   ========================================================================== */
-
 body {
   font: 16px / 26px Helvetica, Helvetica Neue, Arial;
 }
@@ -106,6 +102,24 @@ body {
   @include float(left);
   @include clearfix;
 }
+
+/* Form Labels */
+
+form {
+    p { position: relative;
+      label {
+        position:absolute; 
+        top:10px; 
+        left:10px;
+        font-size: 90%;
+        color: #aaa;
+    }
+  }
+}
+
+
+
+
 /* ==============
    Sidebar Styles
    ============== */
@@ -239,13 +253,50 @@ body {
         padding: 10px;
         
         width: 100%;
-      }   
+      } 
+
+      input[type="submit"]{
+        padding: 5px;
+        @include border-radius(5px, 5px);        
+        background-color: $color2; // Old browsers
+        @include filter-gradient($color2, $color0, vertical); // IE6-9
+        @include background-image(linear-gradient(top,  $color2 44%,$color4 54%,$color0 100%));
+        border: 2px solid $color0;
+        @include box-shadow(#ccc 2px 2px 10px); 
+
+      }  
     }   
    }
 
    .required {
     color: red;
    }
+
+/* Search Form */
+  form.search-form {
+      margin: 24px 0;
+
+      p {
+        margin: 11px 0; 
+      }  
+      
+      label {
+        display: block;
+        line-height: 1.714285714;
+      }
+
+      input[type="text"], textarea
+        {
+          -moz-box-sizing: border-box;
+          box-sizing: border-box;
+          font-size: 12px;
+          
+          line-height: 1.714285714;
+          padding: 10px;
+          
+          width: 70%;
+        }   
+  }   
 
 
 /* ==============
