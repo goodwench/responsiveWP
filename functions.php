@@ -182,6 +182,7 @@
 		));
 	}
 
+
 	//HELPFUL HINT: If your custom post types are returning a 404 error, go into Settings > Permalinks and click Save Changes
 	//Add some post types
 	function my_fancy_posts() {
@@ -198,6 +199,7 @@
 				'editor',
 				'thumbnail',
 				'revisions',
+				'comments',
 				'page-attributes',
 				'exerpt'),
 			'rewrite' => array(

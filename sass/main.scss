@@ -127,8 +127,14 @@ form {
   aside.sidebar {
     color: $black !important;
 
+    &.left-sidebar{
+      float: left;
+      margin-right: 20px;
+    }
+
     h2 {
-      color: $color0;
+      color: $color1;
+      @include single-text-shadow;
       font-size: 20px;
     }
 
@@ -398,9 +404,9 @@ nav {
   nav {
     a {
       float: left;
-      width: 27%;
-      margin: 0 1.7%;
-      padding: 25px 2%;
+      width: 12%;
+      margin: 0 1%;
+      padding: 15px 1%;
       margin-bottom: 0;
     }
     li {
@@ -440,7 +446,15 @@ nav {
   }
   nav {
     float: right;
-    width: 38%;
+    width: 55%;
+
+    ul li{
+      display:inline;
+    }
+
+    .sub-menu {
+      display:none;
+    }
   }
   /* ============
       WIDE: Main
