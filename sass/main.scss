@@ -448,14 +448,62 @@ nav {
     float: right;
     width: 55%;
 
-    ul li{
-      display:inline;
-    }
+    .main-nav {
+      margin: 0;
+      padding: 0;
+      list-style:none;
 
-    .sub-menu {
-      display:none;
+      li {
+        float:left; /* Show list items inline */
+        width:100px;
+        position:relative;
+
+        a {       
+        display:block;
+        padding:8px 7px 8px 7px;
+        text-decoration:none;
+        border-top:2px solid $black;
+        text-align:center;
+        text-transform:uppercase; 
+
+          &:hover{
+            color: $color3;      
+            }
+        }     
+
+      ul {
+        position:absolute;
+        left:0;
+        display:none;
+        margin:0 0 0 -1px;
+        padding:0;
+        list-style:none;
+        border-bottom:3px solid $black;
+
+        li{
+          width:100px;
+          float:left;
+          border-top:none;
+
+          a{
+            display:block; /* Making sure a element covers whole li area */
+            height:15px;
+            padding:8px 7px 13px 7px;
+            color:#fff;
+            text-decoration:none;
+            border-top:none;
+            border-bottom:1px dashed #6B6B6B;
+            
+            &:hover{
+              color: $color3;      
+              }
+          }
+        }
+      }
     }
-  }
+    }
+  }      
+
   /* ============
       WIDE: Main
      ============ */
